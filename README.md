@@ -26,7 +26,8 @@ A simple database application for managing Digimon Story: Time Stranger data, bu
 
 - Implement full CRUD for Moves, Items, Characters.
 - Add Python version using the same SQLite DB.
-- Web scraping for real data from Digimon wiki.
+- Web scraping for more data.
+- Fix so it's possible to edit DB if something unexpeted happened. 
 
 ## Dependencies
 
