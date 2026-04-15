@@ -21,6 +21,7 @@ A simple database application for managing Digimon Story: Time Stranger data, bu
 - Use the menu to navigate.
 - Import data first to populate sample Digimon.
 - Add your own Digimon via the menu.
+- Has a SQlite extention for VScode.
 
 ## Future Plans
 
