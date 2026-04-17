@@ -73,7 +73,7 @@ public static class ImportManager
                     {
                         Name = dto.Name,
                         Type = dto.Type,
-                        Effect = dto.Effect
+                        Description = dto.Effect != null ? string.Join(", ", dto.Effect) : string.Empty
                     });
                 }
             }

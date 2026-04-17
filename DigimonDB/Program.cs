@@ -12,6 +12,16 @@ using System.Text.Json;
 
 namespace DigimonDB
 {
+    enum MainMenuChoice
+    {
+        ManageDigimon,
+        ManageMoves,
+        ManageItems,
+        ManageCharacters,
+        ImportData,
+        Exit
+    }
+
     internal class Program
     {
         static void Main(string[] args)
@@ -31,35 +41,38 @@ namespace DigimonDB
             while (true)
             {
                 var choice = AnsiConsole.Prompt(
-                    new SelectionPrompt<string>()
+                    new SelectionPrompt<MainMenuChoice>()
                         .Title("What would you like to do?")
-                        .AddChoices(new[] {
-                            "Manage Digimon",
-                            "Manage Moves",
-                            "Manage Items",
-                            "Manage Characters",
-                            "Import Data",
-                            "Exit"
-                        }));
+                        .UseConverter(e => e switch
+                        {
+                            MainMenuChoice.ManageDigimon => "Manage Digimon",
+                            MainMenuChoice.ManageMoves => "Manage Moves",
+                            MainMenuChoice.ManageItems => "Manage Items",
+                            MainMenuChoice.ManageCharacters => "Manage Characters",
+                            MainMenuChoice.ImportData => "Import Sample Data",
+                            MainMenuChoice.Exit => "Exit",
+                            _ => e.ToString()
+                        })
+                        .AddChoices(Enum.GetValues<MainMenuChoice>().Cast<MainMenuChoice>()));
 
                 switch (choice)
                 {
-                    case "Manage Digimon":
+                    case MainMenuChoice.ManageDigimon:
                         DigimonManager.ShowMenu(context);
                         break;
-                    case "Manage Moves":
+                    case MainMenuChoice.ManageMoves:
                         MoveManager.ShowMenu(context);
                         break;
-                    case "Manage Items":
+                    case MainMenuChoice.ManageItems:
                         ItemManager.ShowMenu(context);
                         break;
-                    case "Manage Characters":
+                    case MainMenuChoice.ManageCharacters:
                         CharacterManager.ShowMenu(context);
                         break;
-                    case "Import Data":
+                    case MainMenuChoice.ImportData:
                         ImportManager.RunImport(context);
                         break;
-                    case "Exit":
+                    case MainMenuChoice.Exit:
                         return;
                 }
             }
