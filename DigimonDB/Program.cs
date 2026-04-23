@@ -26,6 +26,7 @@ namespace DigimonDB
                     .Centered()
                     .Color(Color.Blue));
             AnsiConsole.MarkupLine("[green]Welcome to the Digimon Story: Time Stranger Database![/]");
+            AnsiConsole.MarkupLine("[green]Digimon from DLCs is included![/]");
             // Initialize DB
             using var context = new DigimonContext();
             context.Database.EnsureCreated();
