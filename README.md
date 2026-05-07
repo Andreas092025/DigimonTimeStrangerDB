@@ -20,7 +20,7 @@ A database application for managing Digimon Story: Time Stranger data, built wit
 ## Usage
 
 - Use the menu to navigate.
-- Run **Import Sample Data** to populate Digimon and Moves from `sample-data.json`.
+- Run **Import Sample Data** to populate Digimon and Items from `sample-data.json`.
 - Or run `PyImport/Import.py` to bulk-import all Digimon from the chunked JSON files (Digimon and Items).
 - Add, edit, or delete Digimon and Items via the menu.
 
