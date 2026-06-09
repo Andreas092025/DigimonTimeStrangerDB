@@ -15,7 +15,7 @@ def import_digimons(conn):
     cur = conn.cursor()
 
     # Read all chunk files and sort by first number in filename.
-    files = glob.glob(str(DATA_DIR / "digimon_*-*.json"))
+    files = glob.glob(str(DATA_DIR / "Digimons" / "digimon_*-*.json"))
     files.sort(key=lambda p: int(Path(p).stem.split("_")[1].split("-")[0]))
 
     inserted = 0
@@ -55,7 +55,7 @@ def import_digimons(conn):
 
 def import_items(conn):
     cur = conn.cursor()
-    items_file = DATA_DIR / "items.json"
+    items_file = DATA_DIR / "Items" / "items.json"
     if not items_file.exists():
         print("items.json not found, skipping items.")
         return
@@ -89,6 +89,46 @@ def import_items(conn):
     conn.commit()
     print(f"Item import summary: inserted={inserted}, skipped={skipped}")
 
+def import_skills(conn):
+    cur = conn.cursor()
+    files = glob.glob(str(DATA_DIR / "Skills" / "attachment_skills_*.json"))
+    files.sort(key=lambda p: int(Path(p).stem.split("_")[2].split("-")[0]))
+
+    inserted = 0
+    skipped = 0
+
+    all_skills = []
+
+    for file_path in files:
+        payload = load_json(file_path)
+        if isinstance(payload, list):
+            all_skills.extend(payload)
+
+    # Process all skills alphabetically (A-Z) by name.
+    all_skills.sort(key=lambda m: m.get("name", "").lower())
+
+    for m in all_skills:
+        name = m.get("name", "")
+        damage_type = m.get("damage_type", "")
+        description = m.get("description", "")
+
+        cur.execute("SELECT 1 FROM Moves WHERE Name = ?", (name,))
+        if cur.fetchone():
+            skipped += 1
+            continue
+
+        cur.execute(
+            """
+            INSERT INTO Moves (Name, Type, Description)
+            VALUES (?, ?, ?)
+            """,
+            (name, damage_type, description)
+        )
+        inserted += 1
+
+    conn.commit()
+    print(f"Skill import summary: inserted={inserted}, skipped={skipped}")
+
 def main():
     if not DB_PATH.exists():
         raise FileNotFoundError(f"Database not found: {DB_PATH}")
@@ -97,6 +137,7 @@ def main():
     try:
         import_digimons(conn)
         import_items(conn)
+        import_skills(conn)
     finally:
         conn.close()
 

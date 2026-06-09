@@ -1,0 +1,212 @@
+[
+  {
+    "name": "Sonic Shot I",
+    "damage_type": "Magic",
+    "description": "[Target: 1 enemy] Performs Wind magic attack at power 40. 95% ACU."
+  },
+  {
+    "name": "Sonic Shot II",
+    "damage_type": "Magic",
+    "description": "[Target: 1 enemy] Performs Wind magic attack at power 60. 95% ACU."
+  },
+  {
+    "name": "Sonic Shot III",
+    "damage_type": "Magic",
+    "description": "[Target: 1 enemy] Performs Wind magic attack at power 75. 95% ACU."
+  },
+  {
+    "name": "Soul Fear I",
+    "damage_type": "Physical",
+    "description": "[Target: All enemies] Performs Dark physical attack at power 25. 90% ACU."
+  },
+  {
+    "name": "Soul Fear II",
+    "damage_type": "Physical",
+    "description": "[Target: All enemies] Performs Dark physical attack at power 35. 90% ACU."
+  },
+  {
+    "name": "Soul Fear III",
+    "damage_type": "Physical",
+    "description": "[Target: All enemies] Performs Dark physical attack at power 45. 90% ACU."
+  },
+  {
+    "name": "Speed Bind",
+    "damage_type": "None",
+    "description": "[Target: 1 enemy] 100% chance of 20% reduction to SPD for 3 turn(s)."
+  },
+  {
+    "name": "Speed Break",
+    "damage_type": "None",
+    "description": "[Target: All enemies] 100% chance of 10% reduction to SPD for 3 turn(s)."
+  },
+  {
+    "name": "Speed Charge",
+    "damage_type": "None",
+    "description": "[Target: 1 ally] 100% chance of 30% boost to SPD for 3 turn(s)."
+  },
+  {
+    "name": "Speed Field",
+    "damage_type": "None",
+    "description": "[Target: All allies] 100% chance of 10% boost to SPD for 3 turn(s)."
+  },
+  {
+    "name": "Spell Boost",
+    "damage_type": "None",
+    "description": "[Target: 1 ally] 100% chance to apply Charge Magic."
+  },
+  {
+    "name": "Spirit Bind",
+    "damage_type": "None",
+    "description": "[Target: 1 enemy] 100% chance of 20% reduction to SPI for 3 turn(s)."
+  },
+  {
+    "name": "Status Barrier",
+    "damage_type": "None",
+    "description": "[Target: 1 ally] 100% chance to apply Stat Debuff Immunity."
+  },
+  {
+    "name": "Stone Cleave I",
+    "damage_type": "Physical",
+    "description": "[Target: All enemies] Performs Earth physical attack at power 35. 85% ACU."
+  },
+  {
+    "name": "Stone Cleave II",
+    "damage_type": "Physical",
+    "description": "[Target: All enemies] Performs Earth physical attack at power 45. 85% ACU."
+  },
+  {
+    "name": "Stone Cleave III",
+    "damage_type": "Physical",
+    "description": "[Target: All enemies] Performs Earth physical attack at power 55. 85% ACU."
+  },
+  {
+    "name": "Tempest I",
+    "damage_type": "Physical",
+    "description": "[Target: All enemies] Performs Wind physical attack at power 25. 90% ACU."
+  },
+  {
+    "name": "Tempest II",
+    "damage_type": "Physical",
+    "description": "[Target: All enemies] Performs Wind physical attack at power 35. 90% ACU."
+  },
+  {
+    "name": "Tempest III",
+    "damage_type": "Physical",
+    "description": "[Target: All enemies] Performs Wind physical attack at power 45. 90% ACU."
+  },
+  {
+    "name": "Texture Blow",
+    "damage_type": "None",
+    "description": "[Target: 1 enemy] 60% chance to apply Crystallization."
+  },
+  {
+    "name": "Thorn Strike I",
+    "damage_type": "Magic",
+    "description": "[Target: 1 enemy] Performs Plant magic attack at power 20 x 2 hits. 95% ACU."
+  },
+  {
+    "name": "Thorn Strike II",
+    "damage_type": "Magic",
+    "description": "[Target: 1 enemy] Performs Plant magic attack at power 30 x 2 hits. 95% ACU."
+  },
+  {
+    "name": "Thorn Strike III",
+    "damage_type": "Magic",
+    "description": "[Target: 1 enemy] Performs Plant magic attack at power 37 x 2 hits. 95% ACU."
+  },
+  {
+    "name": "Thruster Metal I",
+    "damage_type": "Magic",
+    "description": "[Target: 1 enemy] Performs Steel magic attack at power 6 x 7 hits. 90% ACU. 20% CRT Rate."
+  },
+  {
+    "name": "Thruster Metal II",
+    "damage_type": "Magic",
+    "description": "[Target: 1 enemy] Performs Steel magic attack at power 9 x 7 hits. 90% ACU. 20% CRT Rate."
+  },
+  {
+    "name": "Thruster Metal III",
+    "damage_type": "Magic",
+    "description": "[Target: 1 enemy] Performs Steel magic attack at power 11 x 7 hits. 90% ACU. 20% CRT Rate."
+  },
+  {
+    "name": "Thunder Fall I",
+    "damage_type": "Magic",
+    "description": "[Target: All enemies] Performs Electricity magic attack at power 8 x 3 hits. 90% ACU."
+  },
+  {
+    "name": "Thunder Fall II",
+    "damage_type": "Magic",
+    "description": "[Target: All enemies] Performs Electricity magic attack at power 12 x 3 hits. 90% ACU."
+  },
+  {
+    "name": "Thunder Fall III",
+    "damage_type": "Magic",
+    "description": "[Target: All enemies] Performs Electricity magic attack at power 15 x 3 hits. 90% ACU."
+  },
+  {
+    "name": "Tidal Stream I",
+    "damage_type": "Physical",
+    "description": "[Target: All enemies] Performs Water physical attack at power 6 x 4 hits. 90% ACU."
+  },
+  {
+    "name": "Tidal Stream II",
+    "damage_type": "Physical",
+    "description": "[Target: All enemies] Performs Water physical attack at power 9 x 4 hits. 90% ACU."
+  },
+  {
+    "name": "Tidal Stream III",
+    "damage_type": "Physical",
+    "description": "[Target: All enemies] Performs Water physical attack at power 11 x 4 hits. 90% ACU."
+  },
+  {
+    "name": "Venom Trap",
+    "damage_type": "None",
+    "description": "[Target: 1 enemy] 60% chance to apply Poison."
+  },
+  {
+    "name": "Void Ray I",
+    "damage_type": "Magic",
+    "description": "[Target: All enemies] Performs Null magic attack at power 25. 90% ACU. 10% CRT Rate."
+  },
+  {
+    "name": "Void Ray II",
+    "damage_type": "Magic",
+    "description": "[Target: All enemies] Performs Null magic attack at power 35. 90% ACU. 10% CRT Rate."
+  },
+  {
+    "name": "Void Ray III",
+    "damage_type": "Magic",
+    "description": "[Target: All enemies] Performs Null magic attack at power 45. 90% ACU. 10% CRT Rate."
+  },
+  {
+    "name": "Wind Claw I",
+    "damage_type": "Physical",
+    "description": "[Target: 1 enemy] Performs Wind physical attack at power 40. 95% ACU."
+  },
+  {
+    "name": "Wind Claw II",
+    "damage_type": "Physical",
+    "description": "[Target: 1 enemy] Performs Wind physical attack at power 60. 95% ACU."
+  },
+  {
+    "name": "Wind Claw III",
+    "damage_type": "Physical",
+    "description": "[Target: 1 enemy] Performs Wind physical attack at power 75. 95% ACU."
+  },
+  {
+    "name": "Wolkenapalm I",
+    "damage_type": "Physical",
+    "description": "[Target: 1 enemy] Performs Fire physical attack at power 40. 95% ACU."
+  },
+  {
+    "name": "Wolkenapalm II",
+    "damage_type": "Physical",
+    "description": "[Target: 1 enemy] Performs Fire physical attack at power 60. 95% ACU."
+  },
+  {
+    "name": "Wolkenapalm III",
+    "damage_type": "Physical",
+    "description": "[Target: 1 enemy] Performs Fire physical attack at power 75. 95% ACU."
+  }
+]

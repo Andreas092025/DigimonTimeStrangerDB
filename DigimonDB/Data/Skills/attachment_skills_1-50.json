@@ -1,0 +1,266 @@
+[
+  {
+    "id": 1,
+    "name": "Acceleration Boost",
+    "damage_type": "None",
+    "description": "[Target: 1 ally] 100% chance to apply Charge Physical."
+  },
+  {
+    "id": 2,
+    "name": "Angel Ladder I",
+    "damage_type": "Physical",
+    "description": "[Target: All enemies] Performs Light physical attack at power 25. 90% ACU."
+  },
+  {
+    "id": 3,
+    "name": "Angel Ladder II",
+    "damage_type": "Physical",
+    "description": "[Target: All enemies] Performs Light physical attack at power 35. 90% ACU."
+  },
+  {
+    "id": 4,
+    "name": "Angel Ladder III",
+    "damage_type": "Physical",
+    "description": "[Target: All enemies] Performs Light physical attack at power 45. 90% ACU."
+  },
+  {
+    "id": 5,
+    "name": "Aqua Pressure I",
+    "damage_type": "Physical",
+    "description": "[Target: 1 enemy] Performs Water physical attack at power 40. 95% ACU."
+  },
+  {
+    "id": 6,
+    "name": "Aqua Pressure II",
+    "damage_type": "Physical",
+    "description": "[Target: 1 enemy] Performs Water physical attack at power 60. 95% ACU."
+  },
+  {
+    "id": 7,
+    "name": "Aqua Pressure III",
+    "damage_type": "Physical",
+    "description": "[Target: 1 enemy] Performs Water physical attack at power 75. 95% ACU."
+  },
+  {
+    "id": 8,
+    "name": "Attack Bind",
+    "damage_type": "None",
+    "description": "[Target: 1 enemy] 100% chance of 20% reduction to ATK for 3 turn(s)."
+  },
+  {
+    "id": 9,
+    "name": "Attack Break",
+    "damage_type": "None",
+    "description": "[Target: All enemies] 100% chance of 10% reduction to ATK for 3 turn(s)."
+  },
+  {
+    "id": 10,
+    "name": "Attack Charge",
+    "damage_type": "None",
+    "description": "[Target: 1 ally] 100% chance of 30% boost to ATK for 3 turn(s)."
+  },
+  {
+    "id": 11,
+    "name": "Attack Field",
+    "damage_type": "None",
+    "description": "[Target: All allies] 100% chance of 10% boost to ATK for 3 turn(s)."
+  },
+  {
+    "id": 12,
+    "name": "Attack Reflect",
+    "damage_type": "None",
+    "description": "[Target: User] 100% chance to apply Reflect Physical."
+  },
+  {
+    "id": 13,
+    "name": "Aura",
+    "damage_type": "Recovery",
+    "description": "[Target: All allies] Slightly recovers HP."
+  },
+  {
+    "id": 14,
+    "name": "Awesome Quake I",
+    "damage_type": "Magic",
+    "description": "[Target: All enemies] Performs Earth magic attack at power 35. 85% ACU."
+  },
+  {
+    "id": 15,
+    "name": "Awesome Quake II",
+    "damage_type": "Magic",
+    "description": "[Target: All enemies] Performs Earth magic attack at power 45. 85% ACU."
+  },
+  {
+    "id": 16,
+    "name": "Awesome Quake III",
+    "damage_type": "Magic",
+    "description": "[Target: All enemies] Performs Earth magic attack at power 55. 85% ACU."
+  },
+  {
+    "id": 17,
+    "name": "Burst Flame I",
+    "damage_type": "Magic",
+    "description": "[Target: 1 enemy] Performs Fire magic attack at power 8 x 5 hits. 95% ACU."
+  },
+  {
+    "id": 18,
+    "name": "Burst Flame II",
+    "damage_type": "Magic",
+    "description": "[Target: 1 enemy] Performs Fire magic attack at power 12 x 5 hits. 95% ACU."
+  },
+  {
+    "id": 19,
+    "name": "Burst Flame III",
+    "damage_type": "Magic",
+    "description": "[Target: 1 enemy] Performs Fire magic attack at power 15 x 5 hits. 95% ACU."
+  },
+  {
+    "id": 20,
+    "name": "Character Reversal",
+    "damage_type": "None",
+    "description": "[Target: 1 enemy or ally] 100% chance to apply Reverse."
+  },
+  {
+    "id": 21,
+    "name": "Comet Hammer I",
+    "damage_type": "Physical",
+    "description": "[Target: 1 enemy] Performs Earth physical attack at power 8 x 6 hits. 90% ACU."
+  },
+  {
+    "id": 22,
+    "name": "Comet Hammer II",
+    "damage_type": "Physical",
+    "description": "[Target: 1 enemy] Performs Earth physical attack at power 11 x 6 hits. 90% ACU."
+  },
+  {
+    "id": 23,
+    "name": "Comet Hammer III",
+    "damage_type": "Physical",
+    "description": "[Target: 1 enemy] Performs Earth physical attack at power 14 x 6 hits. 90% ACU."
+  },
+  {
+    "id": 24,
+    "name": "Crescent Leaf I",
+    "damage_type": "Physical",
+    "description": "[Target: 1 enemy] Performs Plant physical attack at power 6 x 7 hits. 95% ACU."
+  },
+  {
+    "id": 25,
+    "name": "Crescent Leaf II",
+    "damage_type": "Physical",
+    "description": "[Target: 1 enemy] Performs Plant physical attack at power 9 x 7 hits. 95% ACU."
+  },
+  {
+    "id": 26,
+    "name": "Crescent Leaf III",
+    "damage_type": "Physical",
+    "description": "[Target: 1 enemy] Performs Plant physical attack at power 11 x 7 hits. 95% ACU."
+  },
+  {
+    "id": 27,
+    "name": "Critical Bind",
+    "damage_type": "None",
+    "description": "[Target: 1 enemy] 100% chance of 20% reduction to CRT Rate for 3 turn(s)."
+  },
+  {
+    "id": 28,
+    "name": "Critical Break",
+    "damage_type": "None",
+    "description": "[Target: All enemies] 100% chance of 10% reduction to CRT Rate for 3 turn(s)."
+  },
+  {
+    "id": 29,
+    "name": "Critical Charge",
+    "damage_type": "None",
+    "description": "[Target: 1 ally] 100% chance of 30% boost to CRT Rate for 3 turn(s)."
+  },
+  {
+    "id": 30,
+    "name": "Critical Field",
+    "damage_type": "None",
+    "description": "[Target: All allies] 100% chance of 10% boost to CRT Rate for 3 turn(s)."
+  },
+  {
+    "id": 31,
+    "name": "Crush Blade I",
+    "damage_type": "Physical",
+    "description": "[Target: 1 enemy] Performs Steel physical attack at power 8 x 5 hits. 90% ACU. 20% CRT Rate."
+  },
+  {
+    "id": 32,
+    "name": "Crush Blade II",
+    "damage_type": "Physical",
+    "description": "[Target: 1 enemy] Performs Steel physical attack at power 12 x 5 hits. 90% ACU. 20% CRT Rate."
+  },
+  {
+    "id": 33,
+    "name": "Crush Blade III",
+    "damage_type": "Physical",
+    "description": "[Target: 1 enemy] Performs Steel physical attack at power 15 x 5 hits. 90% ACU. 20% CRT Rate."
+  },
+  {
+    "id": 34,
+    "name": "Curse Barrier",
+    "damage_type": "None",
+    "description": "[Target: 1 ally] 100% chance to apply Status Abnormality Immunity."
+  },
+  {
+    "id": 35,
+    "name": "Diamond Dust I",
+    "damage_type": "Physical",
+    "description": "[Target: All enemies] Performs Ice physical attack at power 6 x 4 hits. 90% ACU."
+  },
+  {
+    "id": 36,
+    "name": "Diamond Dust II",
+    "damage_type": "Physical",
+    "description": "[Target: All enemies] Performs Ice physical attack at power 9 x 4 hits. 90% ACU."
+  },
+  {
+    "id": 37,
+    "name": "Diamond Dust III",
+    "damage_type": "Physical",
+    "description": "[Target: All enemies] Performs Ice physical attack at power 11 x 4 hits. 90% ACU."
+  },
+  {
+    "id": 38,
+    "name": "Dispel",
+    "damage_type": "None",
+    "description": "[Target: 1 ally] Removes stat debuffs."
+  },
+  {
+    "id": 39,
+    "name": "Frozen Bullet I",
+    "damage_type": "Magic",
+    "description": "[Target: 1 enemy] Performs Ice magic attack at power 40. 95% ACU."
+  },
+  {
+    "id": 40,
+    "name": "Frozen Bullet II",
+    "damage_type": "Magic",
+    "description": "[Target: 1 enemy] Performs Ice magic attack at power 60. 95% ACU."
+  },
+  {
+    "id": 41,
+    "name": "Frozen Bullet III",
+    "damage_type": "Magic",
+    "description": "[Target: 1 enemy] Performs Ice magic attack at power 75. 95% ACU."
+  },
+  {
+    "id": 42,
+    "name": "Full Metal Pile I",
+    "damage_type": "Magic",
+    "description": "[Target: All enemies] Performs Steel magic attack at power 25. 85% ACU. 20% CRT Rate."
+  },
+  {
+    "id": 43,
+    "name": "Full Metal Pile II",
+    "damage_type": "Magic",
+    "description": "[Target: All enemies] Performs Steel magic attack at power 35. 85% ACU. 20% CRT Rate."
+  },
+  {
+    "id": 44,
+    "name": "Full Metal Pile III",
+    "damage_type": "Magic",
+    "description": "[Target: All enemies] Performs Steel magic attack at power 45. 85% ACU. 20% CRT Rate."
+  }
+]

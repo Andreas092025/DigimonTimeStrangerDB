@@ -25,9 +25,6 @@ public class Digimon
     public string Description { get; set; } = string.Empty;
 
     // Navigation properties for evolutions
-    public ICollection<Evolution> EvolutionsFrom { get; set; } = new List<Evolution>();
-    public ICollection<Evolution> EvolutionsTo { get; set; } = new List<Evolution>();
-
-    // Moves
-    public ICollection<DigimonMove> DigimonMoves { get; set; } = new List<DigimonMove>();
+    public ICollection<Evolution> EvolutionsFrom { get; set; } = [];
+    public ICollection<Evolution> EvolutionsTo { get; set; } = [];
 }

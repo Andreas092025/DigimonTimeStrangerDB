@@ -1,0 +1,222 @@
+[
+  {
+    "name": "Gaia Blaster I",
+    "damage_type": "Magic",
+    "description": "[Target: 1 enemy] Performs Earth magic attack at power 50. 90% ACU."
+  },
+  {
+    "name": "Gaia Blaster II",
+    "damage_type": "Magic",
+    "description": "[Target: 1 enemy] Performs Earth magic attack at power 70. 90% ACU."
+  },
+  {
+    "name": "Gaia Blaster III",
+    "damage_type": "Magic",
+    "description": "[Target: 1 enemy] Performs Earth magic attack at power 85. 90% ACU."
+  },
+  {
+    "name": "Gale Storm I",
+    "damage_type": "Magic",
+    "description": "[Target: All enemies] Performs Wind magic attack at power 25. 90% ACU."
+  },
+  {
+    "name": "Gale Storm II",
+    "damage_type": "Magic",
+    "description": "[Target: All enemies] Performs Wind magic attack at power 35. 90% ACU."
+  },
+  {
+    "name": "Gale Storm III",
+    "damage_type": "Magic",
+    "description": "[Target: All enemies] Performs Wind magic attack at power 45. 90% ACU."
+  },
+  {
+    "name": "Guard Bind",
+    "damage_type": "None",
+    "description": "[Target: 1 enemy] 100% chance of 20% reduction to DEF for 3 turn(s)."
+  },
+  {
+    "name": "Guard Break",
+    "damage_type": "None",
+    "description": "[Target: All enemies] 100% chance of 10% reduction to DEF for 3 turn(s)."
+  },
+  {
+    "name": "Guard Charge",
+    "damage_type": "None",
+    "description": "[Target: 1 ally] 100% chance of 30% boost to DEF for 3 turn(s)."
+  },
+  {
+    "name": "Guard Field",
+    "damage_type": "None",
+    "description": "[Target: All allies] 100% chance of 10% boost to DEF for 3 turn(s)."
+  },
+  {
+    "name": "Hate Charge",
+    "damage_type": "None",
+    "description": "[Target: User] 100% chance to apply Taunting."
+  },
+  {
+    "name": "Heal",
+    "damage_type": "Recovery",
+    "description": "[Target: 1 ally] Moderately recovers HP."
+  },
+  {
+    "name": "Heavy Strike I",
+    "damage_type": "Physical",
+    "description": "[Target: 1 enemy] Performs Null physical attack at power 40. 95% ACU. 15% CRT Rate."
+  },
+  {
+    "name": "Heavy Strike II",
+    "damage_type": "Physical",
+    "description": "[Target: 1 enemy] Performs Null physical attack at power 60. 95% ACU. 15% CRT Rate."
+  },
+  {
+    "name": "Heavy Strike III",
+    "damage_type": "Physical",
+    "description": "[Target: 1 enemy] Performs Null physical attack at power 75. 95% ACU. 15% CRT Rate."
+  },
+  {
+    "name": "Hell Crusher I",
+    "damage_type": "Magic",
+    "description": "[Target: All enemies] Performs Dark magic attack at power 25. 90% ACU."
+  },
+  {
+    "name": "Hell Crusher II",
+    "damage_type": "Magic",
+    "description": "[Target: All enemies] Performs Dark magic attack at power 35. 90% ACU."
+  },
+  {
+    "name": "Hell Crusher III",
+    "damage_type": "Magic",
+    "description": "[Target: All enemies] Performs Dark magic attack at power 45. 90% ACU."
+  },
+  {
+    "name": "Holy Light I",
+    "damage_type": "Magic",
+    "description": "[Target: 1 enemy] Performs Light magic attack at power 40. 95% ACU."
+  },
+  {
+    "name": "Holy Light II",
+    "damage_type": "Magic",
+    "description": "[Target: 1 enemy] Performs Light magic attack at power 60. 95% ACU."
+  },
+  {
+    "name": "Holy Light III",
+    "damage_type": "Magic",
+    "description": "[Target: 1 enemy] Performs Light magic attack at power 75. 95% ACU."
+  },
+  {
+    "name": "Hydro Water I",
+    "damage_type": "Magic",
+    "description": "[Target: 1 enemy] Performs Water magic attack at power 8 x 5 hits. 95% ACU."
+  },
+  {
+    "name": "Hydro Water II",
+    "damage_type": "Magic",
+    "description": "[Target: 1 enemy] Performs Water magic attack at power 12 x 5 hits. 95% ACU."
+  },
+  {
+    "name": "Hydro Water III",
+    "damage_type": "Magic",
+    "description": "[Target: 1 enemy] Performs Water magic attack at power 15 x 5 hits. 95% ACU."
+  },
+  {
+    "name": "Icicle Edge I",
+    "damage_type": "Physical",
+    "description": "[Target: 1 enemy] Performs Ice physical attack at power 20 x 2 hits. 95% ACU."
+  },
+  {
+    "name": "Icicle Edge II",
+    "damage_type": "Physical",
+    "description": "[Target: 1 enemy] Performs Ice physical attack at power 30 x 2 hits. 95% ACU."
+  },
+  {
+    "name": "Icicle Edge III",
+    "damage_type": "Physical",
+    "description": "[Target: 1 enemy] Performs Ice physical attack at power 37 x 2 hits. 95% ACU."
+  },
+  {
+    "name": "Idle Bubble",
+    "damage_type": "None",
+    "description": "[Target: 1 enemy] 60% chance to apply Sleep."
+  },
+  {
+    "name": "Ignition Flare I",
+    "damage_type": "Physical",
+    "description": "[Target: All enemies] Performs Fire physical attack at power 6 x 4 hits. 90% ACU."
+  },
+  {
+    "name": "Ignition Flare II",
+    "damage_type": "Physical",
+    "description": "[Target: All enemies] Performs Fire physical attack at power 9 x 4 hits. 90% ACU."
+  },
+  {
+    "name": "Ignition Flare III",
+    "damage_type": "Physical",
+    "description": "[Target: All enemies] Performs Fire physical attack at power 11 x 4 hits. 90% ACU."
+  },
+  {
+    "name": "Iron Slash I",
+    "damage_type": "Physical",
+    "description": "[Target: All enemies] Performs Steel physical attack at power 4 x 6 hits. 85% ACU. 20% CRT Rate."
+  },
+  {
+    "name": "Iron Slash II",
+    "damage_type": "Physical",
+    "description": "[Target: All enemies] Performs Steel physical attack at power 6 x 6 hits. 85% ACU. 20% CRT Rate."
+  },
+  {
+    "name": "Iron Slash III",
+    "damage_type": "Physical",
+    "description": "[Target: All enemies] Performs Steel physical attack at power 8 x 6 hits. 85% ACU. 20% CRT Rate."
+  },
+  {
+    "name": "Lethal Blizzard I",
+    "damage_type": "Magic",
+    "description": "[Target: All enemies] Performs Ice magic attack at power 25. 90% ACU."
+  },
+  {
+    "name": "Lethal Blizzard II",
+    "damage_type": "Magic",
+    "description": "[Target: All enemies] Performs Ice magic attack at power 35. 90% ACU."
+  },
+  {
+    "name": "Lethal Blizzard III",
+    "damage_type": "Magic",
+    "description": "[Target: All enemies] Performs Ice magic attack at power 45. 90% ACU."
+  },
+  {
+    "name": "Lightning Claw I",
+    "damage_type": "Physical",
+    "description": "[Target: All enemies] Performs Electricity physical attack at power 6 x 4 hits. 90% ACU."
+  },
+  {
+    "name": "Lightning Claw II",
+    "damage_type": "Physical",
+    "description": "[Target: All enemies] Performs Electricity physical attack at power 9 x 4 hits. 90% ACU."
+  },
+  {
+    "name": "Lightning Claw III",
+    "damage_type": "Physical",
+    "description": "[Target: All enemies] Performs Electricity physical attack at power 11 x 4 hits. 90% ACU."
+  },
+  {
+    "name": "Lunatic Gate I",
+    "damage_type": "Physical",
+    "description": "[Target: All enemies] Performs Null physical attack at power 25. 90% ACU. 10% CRT Rate."
+  },
+  {
+    "name": "Lunatic Gate II",
+    "damage_type": "Physical",
+    "description": "[Target: All enemies] Performs Null physical attack at power 35. 90% ACU. 10% CRT Rate."
+  },
+  {
+    "name": "Lunatic Gate III",
+    "damage_type": "Physical",
+    "description": "[Target: All enemies] Performs Null physical attack at power 45. 90% ACU. 10% CRT Rate."
+  },
+  {
+    "name": "Magic Bind",
+    "damage_type": "None",
+    "description": "[Target: 1 enemy] 100% chance of 20% reduction to INT for 3 turn(s)."
+  }
+]

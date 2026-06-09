@@ -1,0 +1,17 @@
+[
+  {
+    "name": "X-Aura",
+    "damage_type": "Recovery",
+    "description": "[Target: All allies] Moderately recovers HP."
+  },
+  {
+    "name": "X-Heal",
+    "damage_type": "Recovery",
+    "description": "[Target: 1 ally] Greatly recovers HP."
+  },
+  {
+    "name": "X-Revive",
+    "damage_type": "Recovery",
+    "description": "[Target: 1 ally] Revives from KO and greatly recovers HP."
+  }
+]

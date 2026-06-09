@@ -13,22 +13,22 @@ public static class ItemManager
         {
             var choice = AnsiConsole.Prompt(
                 new SelectionPrompt<string>()
-                    .Title("Items Management")
+                    .Title("Digivolution Items Management")
                     .AddChoices(new[] {
-                        "Add Item",
-                        "List Items",
-                        "Delete Item (in case of mistakes)",
+                        "Add Digivolution Item",
+                        "List Digivolution Items",
+                        "Delete Digivolution Item (in case of mistakes)",
                         "Back to Main Menu"
                     }));
             switch (choice)
             {
-                case "Add Item":
+                case "Add Digivolution Item":
                     AddItem(context);
                     break;
-                case "List Items":
+                case "List Digivolution Items":
                     ListItems(context);
                     break;
-                case "Delete Item (in case of mistakes)":
+                case "Delete Digivolution Item (in case of mistakes)":
                     DeleteItem(context);
                     break;
                 case "Back to Main Menu":
@@ -44,12 +44,16 @@ static void AddItem(DigimonContext context)
         var name = AnsiConsole.Ask<string>("Enter item name:");
         var type = AnsiConsole.Ask<string>("Enter item type (e.g., Evolution, Support):");
         var description = AnsiConsole.Ask<string>("Enter item description:");
+        var evolvesFrom = AnsiConsole.Ask<string>("Enter the name of the Digimon this item evolves from (or leave blank):");
+        var evolvesTo = AnsiConsole.Ask<string>("Enter the name of the Digimon this item evolves to (or leave blank):");
 
         var item = new DigimonDB.Models.Item
         {
             Name = name,
             Type = type,
-            Description = description
+            Description = description,
+            EvolvesFrom = evolvesFrom,
+            EvolvesTo = evolvesTo
         };
         context.Items.Add(item);
         context.SaveChanges();
@@ -71,13 +75,16 @@ static void AddItem(DigimonContext context)
         table.AddColumn("Name");
         table.AddColumn("Type");
         table.AddColumn("Description");
+        table.AddColumn("Evolves From");
+        table.AddColumn("Evolves To");
 
         foreach (var item in items)
         {
-            table.AddRow(item.Id.ToString(), item.Name, item.Type, item.Description);
+            table.AddRow(item.Id.ToString(), item.Name, item.Type, item.Description, item.EvolvesFrom, item.EvolvesTo);
         }
 
         AnsiConsole.Write(table);
+        AnsiConsole.MarkupLine("[green] Items can be bought from both Volcanusmon or Gold Guardromon later in the game.[/]");
     }
     static void DeleteItem(DigimonContext context)
     {

@@ -1,101 +1,102 @@
+using System.Text.Json;
 using Spectre.Console;
 using DigimonDB.Data;
 using DigimonDB.Models;
-using System.Text.Json;
+using DigimonEntity = DigimonDB.Models.Digimon; 
+using MoveEntity = DigimonDB.Models.Move; 
 
 namespace DigimonDB.Features.Import;
 
 public static class ImportManager
 {
+    private record SkillDto(string Name, string Damage_Type, string Description);
+
     public static void RunImport(DigimonContext context)
     {
-        var filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data", "sample-data.json");
-        if (!File.Exists(filePath))
+        var dataRoot = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data");
+        var digimonDir = Path.Combine(dataRoot, "Digimons");
+        var skillsDir = Path.Combine(dataRoot, "Skills");
+        var itemsDir = Path.Combine(dataRoot, "Items");
+
+        if (!Directory.Exists(digimonDir) || !Directory.Exists(skillsDir) || !Directory.Exists(itemsDir))
         {
-            AnsiConsole.MarkupLine("[red]Sample data file not found.[/]");
+            AnsiConsole.MarkupLine($"[red]Missing data folders in {dataRoot}[/]");
             return;
         }
 
-        var json = File.ReadAllText(filePath);
-        var options = new JsonSerializerOptions
-        {
-            PropertyNameCaseInsensitive = true
-        };
+        var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
 
-        var data = JsonSerializer.Deserialize<DataDto>(json, options);
-
-        if (data?.Digimons != null)
+        // 1) Import digimons from all files in Data/Digimons
+        foreach (var file in Directory.EnumerateFiles(digimonDir))
         {
+            var json = File.ReadAllText(file);
+            var data = JsonSerializer.Deserialize<DataDto>(json, options);
+            if (data?.Digimons is null) continue;
+
+
             foreach (var dto in data.Digimons)
             {
-                if (!context.Digimons.Any(d => d.Name == dto.Name))
+                if (context.Digimons.Any(d => d.Name == dto.Name)) continue;
+
+                context.Digimons.Add(new DigimonEntity
                 {
-                    context.Digimons.Add(new DigimonDB.Models.Digimon
-                    {
-                        Name = dto.Name,
-                        Type = dto.Type,
-                        Level = dto.Level,
-                        HP = dto.HP,
-                        ATK = dto.ATK,
-                        DEF = dto.DEF,
-                        SPD = dto.SPD,
-                        INT = dto.INT,
-                        Description = dto.Description
-                    });
-                }
+                    Name = dto.Name,
+                    Type = dto.Type,
+                    Level = dto.Level,
+                    HP = dto.HP,
+                    ATK = dto.ATK,
+                    DEF = dto.DEF,
+                    SPD = dto.SPD,
+                    INT = dto.INT,
+                    Description = dto.Description
+                });
             }
         }
 
-        if (data?.Moves != null)
+        // 2) Import skills as moves from all files in Data/Skills
+        foreach (var file in Directory.EnumerateFiles(skillsDir))
         {
-            foreach (var dto in data.Moves)
+            var json = File.ReadAllText(file);
+            var skills = JsonSerializer.Deserialize<List<SkillDto>>(json, options);
+            if (skills is null) continue;
+
+            foreach (var s in skills)
             {
-                if (!context.Moves.Any(m => m.Name == dto.Name))
+                if (context.Moves.Any(m => m.Name == s.Name)) continue;
+
+                context.Moves.Add(new MoveEntity
                 {
-                    context.Moves.Add(new DigimonDB.Models.Move
-                    {
-                        Name = dto.Name,
-                        Type = dto.Type,
-                        Power = dto.Power,
-                        Description = dto.Description
-                    });
-                }
+                    Name = s.Name,
+                    Type = s.Damage_Type,
+                    Description = s.Description
+                });
             }
         }
 
-        if (data?.Items != null)
+        // 3) Import items from all files in Data/Items
+        foreach (var file in Directory.EnumerateFiles(itemsDir))
         {
+            var json = File.ReadAllText(file);
+            var data = JsonSerializer.Deserialize<DataDto>(json, options);
+            if (data?.Items is null) continue;
+
             foreach (var dto in data.Items)
             {
-                if (!context.Items.Any(i => i.Name == dto.Name))
+                if (context.Items.Any(i => i.Name == dto.Name)) continue;
+                context.Items.Add(new Models.Item
                 {
-                    context.Items.Add(new DigimonDB.Models.Item
-                    {
-                        Name = dto.Name,
-                        Type = dto.Type,
-                        Description = dto.Effect != null ? string.Join(", ", dto.Effect) : string.Empty
-                    });
-                }
-            }
-        }
-
-        if (data?.Characters != null)
-        {
-            foreach (var dto in data.Characters)
-            {
-                if (!context.Characters.Any(c => c.Name == dto.Name))
-                {
-                    context.Characters.Add(new DigimonDB.Models.Character
-                    {
-                        Name = dto.Name,
-                        Role = dto.Role,
-                        Description = dto.Description
-                    });
-                }
+                    Name = dto.Name,
+                    Type = dto.Type,
+                    Description = string.Join(", ", dto.Effect),
+                    EvolvesFrom = string.Join(", ", dto.EvolvesFrom),
+                    EvolvesTo = string.Join(", ", dto.EvolvesTo)
+                });
             }
         }
 
         context.SaveChanges();
-        AnsiConsole.MarkupLine("[green]Data imported successfully![/]");
+        AnsiConsole.MarkupLine("[green]Folder import completed.[/]");
+        Console.WriteLine("Press any key to continue...");
+        Console.ReadKey();
     }
 }

@@ -10,4 +10,7 @@ public class Item
     public string Type { get; set; } = string.Empty;
 
     public string Description { get; set; } = string.Empty;
+
+    public string EvolvesFrom { get; set; } = string.Empty; // Name of the Digimon this item evolves from
+    public string EvolvesTo { get; set; } = string.Empty; // Name of the Digimon this item evolves to
 }

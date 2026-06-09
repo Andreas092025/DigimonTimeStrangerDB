@@ -1,11 +1,10 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
 
 namespace DigimonDB.Data;
 
 public record DigimonDto(string Name, string Type, int Level, int HP, int ATK, int DEF, int SPD, int INT, string Description);
-public record MoveDto(string Name, string Type, int Power, string Description);
+public record MoveDto(string Name, string Type, string Description);
 
 public record ItemDto
 {
@@ -14,24 +13,24 @@ public record ItemDto
     
     public string Type { get; init; } = string.Empty;
     
-    [JsonPropertyName("materials")]
-    public string[] Effect { get; init; } = Array.Empty<string>();
-}
+    [JsonPropertyName("evolves_from")]
+    public string[] EvolvesFrom { get; init; } = [];
 
-public record CharacterDto(string Name, string Role, string Description);
+    [JsonPropertyName("evolves_to")]
+    public string[] EvolvesTo { get; init; } = [];
+    
+    [JsonPropertyName("materials")]
+    public string[] Effect { get; init; } = [];
+}
 
 public record DataDto
 {
     [JsonPropertyName("digimons")]
-    public DigimonDto[] Digimons { get; init; } = Array.Empty<DigimonDto>();
+    public DigimonDto[] Digimons { get; init; } = [];
     
     [JsonPropertyName("moves")]
-    public MoveDto[] Moves { get; init; } = Array.Empty<MoveDto>();
+    public MoveDto[] Moves { get; init; } = [];
     
     [JsonPropertyName("items")]
-    public ItemDto[] Items { get; init; } = Array.Empty<ItemDto>();
-    
-    
-    [JsonPropertyName("characters")]
-    public CharacterDto[] Characters { get; init; } = Array.Empty<CharacterDto>();
+    public ItemDto[] Items { get; init; } = [];
 }

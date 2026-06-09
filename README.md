@@ -1,6 +1,6 @@
 # Digimon Story Time Stranger Database
 
-A database application for managing Digimon Story: Time Stranger data, built with C# .NET 10 and SQLite. Includes DLC Digimon.
+A database application for managing Digimon Story: Time Stranger data, built with C# .NET 9 and SQLite. Includes DLC Digimon.
 
 ## Features
 
@@ -13,7 +13,7 @@ A database application for managing Digimon Story: Time Stranger data, built wit
 
 ## Setup
 
-1. Ensure .NET 10 is installed.
+1. Ensure .NET 9 is installed.
 2. Clone or download the project.
 3. Run `dotnet build` in the `DigimonDB` directory.
 4. Run `dotnet run` to start the application.
@@ -35,8 +35,8 @@ A database application for managing Digimon Story: Time Stranger data, built wit
 
 ## Dependencies
 
-- `Microsoft.EntityFrameworkCore.Sqlite` 10.0.0
-- `Microsoft.EntityFrameworkCore.Tools` 10.0.0
+- `Microsoft.EntityFrameworkCore.Sqlite` 9.0.0
+- `Microsoft.EntityFrameworkCore.Tools` 9.0.0
 - `Spectre.Console` 0.49.1
 
 ## Flowchart
