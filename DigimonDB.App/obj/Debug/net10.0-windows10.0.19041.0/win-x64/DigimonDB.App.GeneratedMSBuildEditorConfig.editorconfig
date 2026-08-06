@@ -58,6 +58,56 @@ build_metadata.AdditionalFiles.NoWarn =
 build_metadata.AdditionalFiles.EnableDiagnostics = 
 build_metadata.AdditionalFiles.LineInfo = 
 
+[C:/Users/goku2/Desktop/VScode/DigimonTimeStrangerDB/DigimonDB.App/Pages/AboutPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DigimonDB.App.Pages.AboutPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AboutPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AboutPage.xaml
+build_metadata.AdditionalFiles.Inflator = SourceGen
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/goku2/Desktop/VScode/DigimonTimeStrangerDB/DigimonDB.App/Pages/DatabasePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DigimonDB.App.Pages.DatabasePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\DatabasePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\DatabasePage.xaml
+build_metadata.AdditionalFiles.Inflator = SourceGen
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/goku2/Desktop/VScode/DigimonTimeStrangerDB/DigimonDB.App/Pages/DigimonPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DigimonDB.App.Pages.DigimonPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\DigimonPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\DigimonPage.xaml
+build_metadata.AdditionalFiles.Inflator = SourceGen
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/goku2/Desktop/VScode/DigimonTimeStrangerDB/DigimonDB.App/Pages/DigivolutionPlannerPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DigimonDB.App.Pages.DigivolutionPlannerPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\DigivolutionPlannerPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\DigivolutionPlannerPage.xaml
+build_metadata.AdditionalFiles.Inflator = SourceGen
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/goku2/Desktop/VScode/DigimonTimeStrangerDB/DigimonDB.App/Pages/ItemsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DigimonDB.App.Pages.ItemsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\ItemsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\ItemsPage.xaml
+build_metadata.AdditionalFiles.Inflator = SourceGen
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
 [C:/Users/goku2/Desktop/VScode/DigimonTimeStrangerDB/DigimonDB.App/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DigimonDB.App.Resources.Styles.Colors.xaml

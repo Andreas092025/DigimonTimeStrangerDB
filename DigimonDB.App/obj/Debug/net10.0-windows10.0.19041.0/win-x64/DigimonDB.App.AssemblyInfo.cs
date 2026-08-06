@@ -17,7 +17,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DigimonDB.App")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+a8171d77d3872dc258612925cc25798b55459f4e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+511c5bba866a7dd8836f25575a7674979414960c")]
 [assembly: System.Reflection.AssemblyProductAttribute("DigimonDB.App")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DigimonDB.App")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,39 @@
+# Build outputs
+**/bin/
+**/obj/
+
+# IDE folders and user settings
+.vs/
+.vscode/
+*.suo
+*.user
+*.userprefs
+*.rsuser
+*.sln.docstates
+
+# Logs and temp
+*.log
+*.tmp
+*.cache
+
+# Test coverage artifacts
+coverage*.json
+coverage*.xml
+coverage*.info
+
+# NuGet artifacts
+*.nupkg
+*.snupkg
+.nuget/
+
+# MAUI / Windows app packaging artifacts
+AppPackages/
+BundleArtifacts/
+*.appx
+*.appxbundle
+*.appxupload
+_pkginfo.txt
+
+# Optional: local DB files
+# DigimonDB/digimon.db
+# DigimonDB.App/**/*.db
