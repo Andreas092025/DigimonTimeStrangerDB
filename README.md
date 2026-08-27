@@ -1,45 +1,41 @@
-# Digimon Story Time Stranger Database
+# Digimon Time Stranger Database
 
-A database application for managing Digimon Story: Time Stranger data, built with C# .NET 9 and SQLite. Includes DLC Digimon.
+A .NET-based database and UI project for managing Digimon Story: Time Stranger data, built around SQLite and a .NET MAUI front end.
 
-## Features
+## Overview
 
-- **Digimon**: Full CRUD — add, list, edit, delete with stats (HP, ATK, DEF, SPD, INT, Type, Level, Description).
-- **Items**: Add, list, and delete items.
-- **Moves**: Placeholder — not yet implemented.
-- **Import**: Import sample data from `sample-data.json` (Digimon + Moves) via the in-app menu.
-- **Python Bulk Import**: `PyImport/Import.py` bulk-imports 475+ Digimon from chunked JSON files (`digimon_1-50.json` … `digimon_451-475.json` + `items.json`) directly into the SQLite DB.
-- Beautiful console UI with Spectre.Console.
+This repository contains two related pieces:
 
-## Setup
+- A data layer and import pipeline in the console project under [DigimonDB](DigimonDB)
+- A MAUI application in [DigimonDB.App](DigimonDB.App) for browsing and exploring data from the database
+- Shared domain and service logic in [DigimonDB.Core](DigimonDB.Core)
 
-1. Ensure .NET 9 is installed.
-2. Clone or download the project.
-3. Run `dotnet build` in the `DigimonDB` directory.
-4. Run `dotnet run` to start the application.
+The app is currently focused on cataloging Digimon, moves, items, and evolution relationships using local JSON seed data and SQLite.
 
-## Usage
+## Current Feature Set
 
-- Use the menu to navigate.
-- Run **Import Sample Data** to populate Digimon and Moves from `sample-data.json`.
-- Or run `PyImport/Import.py` to bulk-import all Digimon from the chunked JSON files (Digimon and Items).
-- Add, edit, or delete Digimon and Items via the menu.
+- SQLite-backed database with tables for Digimon, Moves, Items, and Evolutions
+- MAUI navigation with dedicated pages for:
+  - Database dashboard
+  - Digimon catalog
+  - Items
+  - Digivolution planner
+  - About information
+- Dashboard counters for total Digimon, moves, items, and evolutions
+- Seed data import from bundled JSON files into the SQLite database
+- Evolution lookup for direct evolutions from a chosen Digimon
+- Pathfinding between start and target Digimon through stored evolution edges
+- Local file logging and app data persistence for desktop runtime use
 
-## Future Plans
+## Project Structure
 
-- Implement full CRUD for Moves.
-- Add Item editing.
-- Web scraping for real data from a Digimon wiki.
-- Add a Digievoltion planner in some shape or form
-- Implement Evolotions such as DNA evotion, Armor, Spirit etc.
-
-## Dependencies
-
-- `Microsoft.EntityFrameworkCore.Sqlite` 9.0.0
-- `Microsoft.EntityFrameworkCore.Tools` 9.0.0
-- `Spectre.Console` 0.49.1
-
-## Flowchart
+- [DigimonDB](DigimonDB)
+  - Console/data project
+  - EF Core SQLite context and model definitions
+  - JSON seed data and import tooling
+- [DigimonDB.Core](DigimonDB.Core)
+  - Shared services and DTO/model layer used by the app
+  - Contains `DigimonService`, `ItemService`, `ImportService`, `DashboardService## Flowchart
 [![](https://mermaid.ink/img/pako:eNp1kkGPmzAQhf8K8mkrJRE2gRAOlTaAIqrm0t1TTQ7WMiFuwY6MabOL8t_r4DibtF1ODN-8mfdGDOhFVoAStGvk75c9U9p7zkrhmefxgT5p82H7yZtOP3srmvHu0LBX75nrBspSZLzmrRSmbsF70oqJGpSXrbZWvxplKS0E15w1_A28iyKVQsNRmxG56HoFqQKmobro0lGXDRvGhbcB0Z9KYUk2kpxumGD1ddr2Fq4dLDS03R0qaNEepAmYMc3uyJcHmh-5CeoW5XYRHlzEi42RYQsJfayqvzw4FtCvvNMfwDnNK_4RDGkGDWj4P86cwbUNi4cx5q29te1cW3tnvL0HF2-393Fo7pb_K7tuLuwtMf0GrPJmPzpznR1vwM0qbH9Brte2Qa6cWB44vpG_3sWBhXMHb10Wc-sETVCteIUSrXqYoBZUy84lGs59JdJ7aKFEiXmtmPpZolKcjObAxHcpWydTsq_3KNmxpjNVf6jMH5hxViv23gKiApXKXmiUYEzIOAQlAzqiJCYzPyKRH0ckjudhiCfoFSXT2J9hn0QLfxmSaBkRcpqgt3EtnuEwCsKALOPFAhMz7vQHlGkFvQ?type=png)](https://mermaid.live/edit#pako:eNp1kkGPmzAQhf8K8mkrJRE2gRAOlTaAIqrm0t1TTQ7WMiFuwY6MabOL8t_r4DibtF1ODN-8mfdGDOhFVoAStGvk75c9U9p7zkrhmefxgT5p82H7yZtOP3srmvHu0LBX75nrBspSZLzmrRSmbsF70oqJGpSXrbZWvxplKS0E15w1_A28iyKVQsNRmxG56HoFqQKmobro0lGXDRvGhbcB0Z9KYUk2kpxumGD1ddr2Fq4dLDS03R0qaNEepAmYMc3uyJcHmh-5CeoW5XYRHlzEi42RYQsJfayqvzw4FtCvvNMfwDnNK_4RDGkGDWj4P86cwbUNi4cx5q29te1cW3tnvL0HF2-393Fo7pb_K7tuLuwtMf0GrPJmPzpznR1vwM0qbH9Brte2Qa6cWB44vpG_3sWBhXMHb10Wc-sETVCteIUSrXqYoBZUy84lGs59JdJ7aKFEiXmtmPpZolKcjObAxHcpWydTsq_3KNmxpjNVf6jMH5hxViv23gKiApXKXmiUYEzIOAQlAzqiJCYzPyKRH0ckjudhiCfoFSXT2J9hn0QLfxmSaBkRcpqgt3EtnuEwCsKALOPFAhMz7vQHlGkFvQ)
 
 
