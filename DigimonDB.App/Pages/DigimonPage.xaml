@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:DigimonDB.App.Converters"
+             x:Class="DigimonDB.App.Pages.DigimonPage"
+             Title="Digimon">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:DigimonNameToImageConverter x:Key="DigimonNameToImageConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid Padding="20" RowDefinitions="Auto,Auto,Auto,Auto,*" RowSpacing="12">
+        <Label x:Name="StatusLabel" Text="Loading Digimon..." FontAttributes="Bold" />
+
+        <SearchBar x:Name="SearchBar"
+                   Grid.Row="1"
+                   Placeholder="Search by name or type"
+                   TextChanged="OnSearchTextChanged" />
+
+        <Grid Grid.Row="2" ColumnDefinitions="*,*,Auto" ColumnSpacing="10">
+            <Entry x:Name="MinLevelEntry" Placeholder="Min Level" Keyboard="Numeric" />
+            <Entry x:Name="MaxLevelEntry" Grid.Column="1" Placeholder="Max Level" Keyboard="Numeric" />
+            <Button Grid.Column="2" Text="Apply" Clicked="OnApplyFiltersClicked" />
+        </Grid>
+
+        <Grid Grid.Row="3" ColumnDefinitions="Auto,*" ColumnSpacing="10" VerticalOptions="Center">
+            <Label Text="Sort By" VerticalOptions="Center" FontAttributes="Bold" />
+            <Picker x:Name="SortPicker" Grid.Column="1" SelectedIndexChanged="OnSortChanged">
+                <Picker.Items>
+                    <x:String>A-Z</x:String>
+                    <x:String>Z-A</x:String>
+                    <x:String>ID (1-475)</x:String>
+                    <x:String>ID (475-1)</x:String>
+                </Picker.Items>
+            </Picker>
+        </Grid>
+
+        <CollectionView x:Name="DigimonCollection"
+                        Grid.Row="4"
+                        SelectionMode="None">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Border Padding="12" Margin="0,0,0,10" Stroke="#3A3A3A" StrokeThickness="1" StrokeShape="RoundRectangle 8">
+                        <VerticalStackLayout Spacing="6">
+                            <Image Source="{Binding Name, Converter={StaticResource DigimonNameToImageConverter}}"
+                                   HeightRequest="110"
+                                   Aspect="AspectFit" />
+                            <Label Text="{Binding Name}" FontSize="18" FontAttributes="Bold" />
+                            <Label Text="{Binding Type, StringFormat='Type: {0}'}" />
+                            <Label Text="{Binding Level, StringFormat='Level: {0}'}" />
+                            <Label Text="{Binding HP, StringFormat='HP: {0}'}" />
+                            <Label Text="{Binding ATK, StringFormat='ATK: {0}'}" />
+                            <Label Text="{Binding DEF, StringFormat='DEF: {0}'}" />
+                            <Label Text="{Binding SPD, StringFormat='SPD: {0}'}" />
+                            <Label Text="{Binding INT, StringFormat='INT: {0}'}" />
+                        </VerticalStackLayout>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+
+</ContentPage>

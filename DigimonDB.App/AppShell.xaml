@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="DigimonDB.App.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pages="clr-namespace:DigimonDB.App.Pages"
+    FlyoutBehavior="Flyout"
+    Title="Digimon Time Stranger DB">
+
+    <FlyoutItem Title="Database" Route="database">
+        <ShellContent ContentTemplate="{DataTemplate pages:DatabasePage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Items" Route="items">
+        <ShellContent ContentTemplate="{DataTemplate pages:ItemsPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Digimon" Route="digimon">
+        <ShellContent ContentTemplate="{DataTemplate pages:DigimonPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Digivolution Planner" Route="digivolution">
+        <ShellContent ContentTemplate="{DataTemplate pages:DigivolutionPlannerPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="About" Route="about">
+        <ShellContent ContentTemplate="{DataTemplate pages:AboutPage}" />
+    </FlyoutItem>
+
+</Shell>

@@ -11,13 +11,8 @@ public class Move
     public string Name { get; set; } = string.Empty;
 
     [StringLength(50)]
-    public string Type { get; set; } = string.Empty; // e.g., Fire, Water
-
-    public int Power { get; set; }
+    public string Type { get; set; } = string.Empty; 
 
     [StringLength(500)]
     public string Description { get; set; } = string.Empty;
-
-    // Many-to-many with Digimon
-    public ICollection<DigimonMove> DigimonMoves { get; set; } = new List<DigimonMove>();
 }

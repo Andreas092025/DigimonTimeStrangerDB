@@ -1,0 +1,242 @@
+[
+  {
+    "name": "Magic Break",
+    "damage_type": "None",
+    "description": "[Target: All enemies] 100% chance of 10% reduction to INT for 3 turn(s)."
+  },
+  {
+    "name": "Magic Charge",
+    "damage_type": "None",
+    "description": "[Target: 1 ally] 100% chance of 30% boost to INT for 3 turn(s)."
+  },
+  {
+    "name": "Magic Field",
+    "damage_type": "None",
+    "description": "[Target: All allies] 100% chance of 10% boost to INT for 3 turn(s)."
+  },
+  {
+    "name": "Magic Reflect",
+    "damage_type": "None",
+    "description": "[Target: User] 100% chance to apply Reflect Magic."
+  },
+  {
+    "name": "Magma Fall I",
+    "damage_type": "Magic",
+    "description": "[Target: All enemies] Performs Fire magic attack at power 25. 90% ACU."
+  },
+  {
+    "name": "Magma Fall II",
+    "damage_type": "Magic",
+    "description": "[Target: All enemies] Performs Fire magic attack at power 35. 90% ACU."
+  },
+  {
+    "name": "Magma Fall III",
+    "damage_type": "Magic",
+    "description": "[Target: All enemies] Performs Fire magic attack at power 45. 90% ACU."
+  },
+  {
+    "name": "Meditator",
+    "damage_type": "None",
+    "description": "[Target: 1 ally] Removes status abnormalities."
+  },
+  {
+    "name": "Mental Break",
+    "damage_type": "None",
+    "description": "[Target: All enemies] 100% chance of 10% reduction to SPI for 3 turn(s)."
+  },
+  {
+    "name": "Mental Charge",
+    "damage_type": "None",
+    "description": "[Target: 1 ally] 100% chance of 30% boost to SPI for 3 turn(s)."
+  },
+  {
+    "name": "Mental Field",
+    "damage_type": "None",
+    "description": "[Target: All allies] 100% chance of 10% boost to SPI for 3 turn(s)."
+  },
+  {
+    "name": "Nanomachine Break I",
+    "damage_type": "Physical",
+    "description": "[Target: 1 enemy] Performs Electricity physical attack at power 10 x 4 hits. 95% ACU."
+  },
+  {
+    "name": "Nanomachine Break II",
+    "damage_type": "Physical",
+    "description": "[Target: 1 enemy] Performs Electricity physical attack at power 15 x 4 hits. 95% ACU."
+  },
+  {
+    "name": "Nanomachine Break III",
+    "damage_type": "Physical",
+    "description": "[Target: 1 enemy] Performs Electricity physical attack at power 19 x 4 hits. 95% ACU."
+  },
+  {
+    "name": "Needle Plant I",
+    "damage_type": "Physical",
+    "description": "[Target: All enemies] Performs Plant physical attack at power 4 x 6 hits. 90% ACU."
+  },
+  {
+    "name": "Needle Plant II",
+    "damage_type": "Physical",
+    "description": "[Target: All enemies] Performs Plant physical attack at power 6 x 6 hits. 90% ACU."
+  },
+  {
+    "name": "Needle Plant III",
+    "damage_type": "Physical",
+    "description": "[Target: All enemies] Performs Plant physical attack at power 8 x 6 hits. 90% ACU."
+  },
+  {
+    "name": "Nightmare I",
+    "damage_type": "Magic",
+    "description": "[Target: 1 enemy] Performs Dark magic attack at power 40. 95% ACU."
+  },
+  {
+    "name": "Nightmare II",
+    "damage_type": "Magic",
+    "description": "[Target: 1 enemy] Performs Dark magic attack at power 60. 95% ACU."
+  },
+  {
+    "name": "Nightmare III",
+    "damage_type": "Magic",
+    "description": "[Target: 1 enemy] Performs Dark magic attack at power 75. 95% ACU."
+  },
+  {
+    "name": "Normalize",
+    "damage_type": "None",
+    "description": "[Target: 1 ally] Removes Injury & Disease."
+  },
+  {
+    "name": "Ocean Wave I",
+    "damage_type": "Magic",
+    "description": "[Target: All enemies] Performs Water magic attack at power 25. 90% ACU."
+  },
+  {
+    "name": "Ocean Wave II",
+    "damage_type": "Magic",
+    "description": "[Target: All enemies] Performs Water magic attack at power 35. 90% ACU."
+  },
+  {
+    "name": "Ocean Wave III",
+    "damage_type": "Magic",
+    "description": "[Target: All enemies] Performs Water magic attack at power 45. 90% ACU."
+  },
+  {
+    "name": "Panic Wisp",
+    "damage_type": "None",
+    "description": "[Target: 1 enemy] 60% chance to apply Confusion."
+  },
+  {
+    "name": "Power Energy I",
+    "damage_type": "Magic",
+    "description": "[Target: 1 enemy] Performs Null magic attack at power 40. 95% ACU. 15% CRT Rate."
+  },
+  {
+    "name": "Power Energy II",
+    "damage_type": "Magic",
+    "description": "[Target: 1 enemy] Performs Null magic attack at power 60. 95% ACU. 15% CRT Rate."
+  },
+  {
+    "name": "Power Energy III",
+    "damage_type": "Magic",
+    "description": "[Target: 1 enemy] Performs Null magic attack at power 75. 95% ACU. 15% CRT Rate."
+  },
+  {
+    "name": "Reset Body",
+    "damage_type": "None",
+    "description": "[Target: 1 enemy] Removes stat buffs."
+  },
+  {
+    "name": "Restore",
+    "damage_type": "None",
+    "description": "[Target: 1 ally] Removes status abnormalities, Injury, & Disease."
+  },
+  {
+    "name": "Revive",
+    "damage_type": "Recovery",
+    "description": "[Target: 1 ally] Revives from KO and moderately recovers HP."
+  },
+  {
+    "name": "Ripping Net",
+    "damage_type": "None",
+    "description": "[Target: 1 enemy] 60% chance to apply Paralysis."
+  },
+  {
+    "name": "Rune Forest I",
+    "damage_type": "Magic",
+    "description": "[Target: All enemies] Performs Plant magic attack at power 25. 90% ACU."
+  },
+  {
+    "name": "Rune Forest II",
+    "damage_type": "Magic",
+    "description": "[Target: All enemies] Performs Plant magic attack at power 35. 90% ACU."
+  },
+  {
+    "name": "Rune Forest III",
+    "damage_type": "Magic",
+    "description": "[Target: All enemies] Performs Plant magic attack at power 45. 90% ACU."
+  },
+  {
+    "name": "Safety Guard",
+    "damage_type": "None",
+    "description": "[Target: 1 ally] 100% chance to apply Guts."
+  },
+  {
+    "name": "Saint Knuckle I",
+    "damage_type": "Physical",
+    "description": "[Target: 1 enemy] Performs Light physical attack at power 20 x 2 hits. 95% ACU."
+  },
+  {
+    "name": "Saint Knuckle II",
+    "damage_type": "Physical",
+    "description": "[Target: 1 enemy] Performs Light physical attack at power 30 x 2 hits. 95% ACU."
+  },
+  {
+    "name": "Saint Knuckle III",
+    "damage_type": "Physical",
+    "description": "[Target: 1 enemy] Performs Light physical attack at power 38 x 2 hits. 95% ACU."
+  },
+  {
+    "name": "Shadow Fang I",
+    "damage_type": "Physical",
+    "description": "[Target: 1 enemy] Performs Dark physical attack at power 20 x 2 hits. 95% ACU."
+  },
+  {
+    "name": "Shadow Fang II",
+    "damage_type": "Physical",
+    "description": "[Target: 1 enemy] Performs Dark physical attack at power 30 x 2 hits. 95% ACU."
+  },
+  {
+    "name": "Shadow Fang III",
+    "damage_type": "Physical",
+    "description": "[Target: 1 enemy] Performs Dark physical attack at power 38 x 2 hits. 95% ACU."
+  },
+  {
+    "name": "Shine Burst I",
+    "damage_type": "Magic",
+    "description": "[Target: All enemies] Performs Light magic attack at power 25. 90% ACU."
+  },
+  {
+    "name": "Shine Burst II",
+    "damage_type": "Magic",
+    "description": "[Target: All enemies] Performs Light magic attack at power 35. 90% ACU."
+  },
+  {
+    "name": "Shine Burst III",
+    "damage_type": "Magic",
+    "description": "[Target: All enemies] Performs Light magic attack at power 45. 90% ACU."
+  },
+  {
+    "name": "Shock Plasma I",
+    "damage_type": "Magic",
+    "description": "[Target: 1 enemy] Performs Electricity magic attack at power 13 x 3 hits. 95% ACU."
+  },
+  {
+    "name": "Shock Plasma II",
+    "damage_type": "Magic",
+    "description": "[Target: 1 enemy] Performs Electricity magic attack at power 20 x 3 hits. 95% ACU."
+  },
+  {
+    "name": "Shock Plasma III",
+    "damage_type": "Magic",
+    "description": "[Target: 1 enemy] Performs Electricity magic attack at power 25 x 3 hits. 95% ACU."
+  }
+]
